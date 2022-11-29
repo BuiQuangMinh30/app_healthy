@@ -1,0 +1,11 @@
+{
+  "expo": {
+    "name": "blog-healthy",
+    "slug": "blog-healthy",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  },
+  "name": "blog-healthy"
+}
