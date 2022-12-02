@@ -5,6 +5,7 @@ import OnboardingScreens from "../../Screens/Onboarding/OnboardingScreens";
 import MainScreen from "../../Screens/MainScreen";
 import SignUp from "../../Screens/SignUp";
 import Login from "../../Screens/Login";
+import DrawerNav from "../drawer/MainDrawer";
 
 const Stack = createStackNavigator();
 const GeneralRoutes = () => {
@@ -28,6 +29,11 @@ const GeneralRoutes = () => {
       <Stack.Screen
         name={"Login"}
         component={Login}
+        options={{ headerShown: false }}
+      ></Stack.Screen>
+      <Stack.Screen
+        name={"DrawerNav"}
+        component={DrawerNav}
         options={{ headerShown: false }}
       ></Stack.Screen>
     </Stack.Navigator>

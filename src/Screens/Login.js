@@ -40,7 +40,11 @@ const Login = ({ navigation }) => {
       </CheckBox>
 
       <Spacer height={50} />
-      <TouchableButton title={"Login"} textStyle={{ color: "white" }} />
+      <TouchableButton
+        title={"Login"}
+        textStyle={{ color: "white" }}
+        onPress={() => navigation.navigate("DrawerNav")}
+      />
       <Spacer height={20} />
       <Text
         style={{

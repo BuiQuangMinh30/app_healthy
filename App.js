@@ -1,5 +1,7 @@
 import React from "react";
 import * as eva from "@eva-design/eva";
+import "react-native-gesture-handler";
+import { registerRootComponent } from "expo";
 import { StyleSheet, Text, View, SafeAreaView } from "react-native";
 import { ApplicationProvider, IconRegistry } from "@ui-kitten/components";
 import { EvaIconsPack } from "@ui-kitten/eva-icons";
@@ -22,3 +24,5 @@ export default function App() {
     </>
   );
 }
+
+registerRootComponent(App);
